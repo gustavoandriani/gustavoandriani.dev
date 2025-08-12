@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Button, Stack, Icon, Link, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Button, Stack, Icon, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
