@@ -17,7 +17,7 @@ export default function HeroSection() {
   return (
     <Box
       id="#Início"
-      width={{ base: "120vw", md: "100vw" }}
+      width={{ base: "120vw", md: "100%" }}
       height={{ base: "120vh", md: "100vh" }}
       bg={"black"}
       color="white"
@@ -28,7 +28,6 @@ export default function HeroSection() {
         direction={{ base: "column", md: "row" }}
         align="center"
         justify="space-between"
-        width="100vw"
         height="100%"
         mx="auto"
       >
