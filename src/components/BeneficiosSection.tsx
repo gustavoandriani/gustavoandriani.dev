@@ -1,0 +1,90 @@
+import { Box, Heading, Text, Stack, SimpleGrid } from "@chakra-ui/react";
+import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
+
+const COLORS = ["#38B2AC", "#2C7A7B", "#81E6D9", "#E6FFFA"];
+
+const pieData = [
+  { name: "Aumento de Vendas", value: 40 },
+  { name: "Mais Visibilidade", value: 30 },
+  { name: "Credibilidade", value: 20 },
+  { name: "Atendimento 24h", value: 10 },
+];
+
+const barData = [
+  { name: "Antes", Vendas: 40, Leads: 30 },
+  { name: "Depois", Vendas: 90, Leads: 80 },
+];
+
+export default function BeneficiosSection() {
+  return (
+    <Box py={5} px={{ base: 4, md: 12 }} bg="black" height="100vh">
+      <Stack gap={8} mt={24} textAlign="center">
+        <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
+          Benefícios de Ter um Site para Sua Empresa
+        </Heading>
+        <Text fontSize="lg" color="white" maxW="800px" mx="auto">
+          Um site profissional transforma a presença digital da sua empresa, aumentando
+          o alcance, gerando mais clientes e fortalecendo sua marca.
+        </Text>
+      </Stack>
+
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap={12} mt={5}>
+        
+        {/* Gráfico de Pizza */}
+        <Box p={6} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
+          <Heading as="h3" size="md" mb={4}>
+            Principais Benefícios
+          </Heading>
+          <ResponsiveContainer width="100%" height={300}>
+            <PieChart>
+              <Pie
+                data={pieData}
+                cx="50%"
+                cy="50%"
+                labelLine={false}
+                outerRadius={100}
+                fill="#8884d8"
+                dataKey="value"
+                label={({ name, percent }) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}
+              >
+                {pieData.map((_, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+              </Pie>
+              <Legend />
+              <Tooltip />
+            </PieChart>
+          </ResponsiveContainer>
+        </Box>
+
+        {/* Gráfico de Barras */}
+        <Box p={6} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
+          <Heading as="h3" size="md" mb={4}>
+            Mudanças Visíveis
+          </Heading>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={barData}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="Vendas" fill="#38B2AC" />
+              <Bar dataKey="Leads" fill="#81E6D9" />
+            </BarChart>
+          </ResponsiveContainer>
+        </Box>
+
+      </SimpleGrid>
+
+      <Stack gap={8} mt={5} textAlign="center">
+        <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
+          Transforme <Text display="inline" color="teal.300">AGORA</Text> o rumo da sua empresa
+        </Heading>
+        <Text fontSize="lg" color="white" maxW="800px" mx="auto">
+          Um site profissional transforma a presença digital da sua empresa, aumentando
+          o alcance, gerando mais clientes e fortalecendo sua marca.
+        </Text>
+      </Stack>
+    </Box>
+  );
+}
