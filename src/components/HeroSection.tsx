@@ -17,11 +17,12 @@ export default function HeroSection() {
   return (
     <Box
       id="#Início"
-      width={{ base: "120vw", md: "100%" }}
-      height={{ base: "120vh", md: "100vh" }}
+      width="100%"
+      height="100vh"
       bg={"black"}
       color="white"
-      py={{ base: 10, md: 20 }}
+      mt={{ base: 40, md: 0 }}
+      py={{ base: 0, md: 20 }}
       overflowX="hidden"
     >
       <Flex
@@ -32,7 +33,7 @@ export default function HeroSection() {
         mx="auto"
       >
         {/* Texto */}
-        <Stack gap={6} maxW="42vw" ml={{ base: 5, md: 10}}>
+        <Stack gap={6} maxW={{ base: "100vw", md: "42vw" }} ml={{ base: 5, md: 10}}>
           <Text color="teal.300" fontWeight="bold" fontSize={{ base: "lg", md: "3xl" }}>
             Mude a visão da sua empresa
           </Text>
