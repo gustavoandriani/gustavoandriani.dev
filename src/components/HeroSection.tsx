@@ -18,7 +18,7 @@ export default function HeroSection() {
     <Box
       id="#Início"
       width="100%"
-      height="75vh"
+      height={{ base: "65vh", md: "100vh" }}
       bg={"black"}
       color="white"
       mt={{ base: 40, md: 0 }}
