@@ -18,10 +18,11 @@ export default function HeroSection() {
     <Box
       id="#Início"
       width="100%"
-      height="100vh"
+      height="75vh"
       bg={"black"}
       color="white"
       mt={{ base: 40, md: 0 }}
+      px={{ base: 20, md: 0}}
       py={{ base: 0, md: 20 }}
       overflowX="hidden"
     >
@@ -30,7 +31,7 @@ export default function HeroSection() {
         align="center"
         justify="space-between"
         height="100%"
-        mx="auto"
+        mx={{base: "none", md: "auto"}}
       >
         {/* Texto */}
         <Stack gap={6} maxW={{ base: "100vw", md: "42vw" }} ml={{ base: 5, md: 10}}>
@@ -46,21 +47,22 @@ export default function HeroSection() {
           </Text>
 
           <Stack direction={{ base: "column", sm: "row" }} gap={6}>
-            <Link target="_blank" href="https://wa.me/5516996192224?text=Me%20ajuda%20a%20tornar%20minha%20empresa%20vis%C3%ADvel">
-                <Button
-                bg="green.700"
-                color="white"
-                size="lg"
-                px={8}
-                _hover={{ bg: "green.800" }}
-                loading={loading} onClick={() => { setLoading(!loading); handleLoading(!status)}}
-                >
-                    <Icon>
-                        <FaWhatsapp />
-                    </Icon>
-                    Impulsionar minha empresa
-                </Button>
-            </Link>
+            <Button
+            bg="green.700"
+            color="white"
+            size="lg"
+            px={8}
+            _hover={{ bg: "green.800" }}
+            loading={loading} onClick={() => { setLoading(!loading); handleLoading(!loading)}}
+            asChild
+            >
+              <a target="_blank" href="https://wa.me/5516996192224?text=Me%20ajuda%20a%20tornar%20minha%20empresa%20vis%C3%ADvel">
+                <Icon>
+                    <FaWhatsapp />
+                </Icon>
+                Impulsionar minha empresa
+              </a>
+            </Button>
             <Button
                 variant="outline"
                 color="white"
