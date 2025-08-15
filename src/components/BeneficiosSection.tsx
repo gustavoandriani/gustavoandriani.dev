@@ -30,7 +30,7 @@ export default function BeneficiosSection() {
     }, 3000)
   }
   return (
-    <Box py={20} px={{ base: 4, md: 12 }} bg="black" height="100vh">
+    <Box pt={10} pb={24} px={{ base: 4, md: 12 }} bg="black" height="100vh">
       <Stack gap={8} textAlign="center">
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
           Benefícios de Ter um Site para Sua Empresa

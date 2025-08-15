@@ -80,6 +80,7 @@ export default function HeroSection() {
         <Box
             flex="1"
             width="100dvw"
+            height={{md:"100dvh"}}
             bg="teal.500"
             clipPath={{ base:"none", md:"polygon(20% 0, 100% 0, 100% 100%, 0% 100%)" }}
             p={{ base: 2, md:"55px" }}
