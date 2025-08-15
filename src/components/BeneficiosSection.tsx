@@ -102,6 +102,7 @@ export default function BeneficiosSection() {
           width={{ base:"75%", md:"20%"}}
           size="2xl"
           mx="auto"
+          mb={10}
           px={8}
           variant="outline"
           _hover={{ bg: "green.700" }}
