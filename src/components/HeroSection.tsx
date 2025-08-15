@@ -78,11 +78,10 @@ export default function HeroSection() {
 
         {/* Imagem */}
         <Box
-            display={{ base: "none", md: "block" }}
             flex="1"
             height="100vh"
             width="100vw"
-            bg="teal.400"
+            bg={{ base:"black", md:"teal.400" }}
             clipPath="polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
             p="55px"
         >
