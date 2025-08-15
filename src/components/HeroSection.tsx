@@ -22,7 +22,7 @@ export default function HeroSection() {
       bg={"black"}
       color="white"
       px={{ base: 10, md: 0}}
-      py={{ base: 0, md: 20 }}
+      py={{ base: 10, md: 20 }}
       overflowX="hidden"
     >
       <Flex
