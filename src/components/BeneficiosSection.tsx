@@ -99,7 +99,7 @@ export default function BeneficiosSection() {
         <Button
           colorPalette="green"
           color="white"
-          width="20%"
+          width={{ base:"75%", md:"20%"}}
           size="2xl"
           mx="auto"
           px={8}
