@@ -44,7 +44,7 @@ export default function BeneficiosSection() {
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={12} mt={5}>
         
         {/* Gráfico de Pizza */}
-        <Box p={6} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
+        <Box p={{ base:0, md:6 }} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
           <Heading as="h3" size="md" mb={4}>
             Principais Benefícios
           </Heading>
@@ -71,7 +71,7 @@ export default function BeneficiosSection() {
         </Box>
 
         {/* Gráfico de Barras */}
-        <Box p={6} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
+        <Box p={{ base:0, md:6 }} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
           <Heading as="h3" size="md" mb={4}>
             Mudanças Visíveis
           </Heading>
