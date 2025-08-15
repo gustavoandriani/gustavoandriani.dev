@@ -45,7 +45,7 @@ export default function HeroSection() {
             <br />
             Seu próximo grande passo começa <Text fontWeight="bold" display="inline" color="teal.300">AQUI</Text>.
             <br />
-            Entre em contato <Text fontWeight="bold" display="inline" color="teal.300">AGORA</Text>
+            Entre em contato <Text fontWeight="bold" display="inline" color="teal.300">AGORA!</Text>
           </Text>
 
           <Stack direction={{ base: "column", sm: "row" }} gap={6}>

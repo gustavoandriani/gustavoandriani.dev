@@ -41,14 +41,14 @@ export default function BeneficiosSection() {
         </Text>
       </Stack>
 
-      <SimpleGrid columns={{ base: 1, md: 2 }} gap={12} mt={5}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap={10} mt={5}>
         
         {/* Gráfico de Pizza */}
-        <Box p={{ base:0, md:6 }} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
-          <Heading as="h3" size="md" mb={4}>
+        <Box p={{ base:0, md:6 }} height="fit" border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
+          <Heading as="h3" size="md" mb={4} p={2}>
             Principais Benefícios
           </Heading>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" minHeight={350} maxHeight={500}>
             <PieChart>
               <Pie
                 data={pieData}
@@ -72,7 +72,7 @@ export default function BeneficiosSection() {
 
         {/* Gráfico de Barras */}
         <Box p={{ base:0, md:6 }} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
-          <Heading as="h3" size="md" mb={4}>
+          <Heading as="h3" size="md" mb={4} p={2}>
             Mudanças Visíveis
           </Heading>
           <ResponsiveContainer width="100%" height={300}>
