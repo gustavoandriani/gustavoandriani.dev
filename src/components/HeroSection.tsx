@@ -36,14 +36,17 @@ export default function HeroSection() {
         {/* Texto */}
         <Stack gap={6} maxW={{ base: "100vw", md: "42vw" }} ml={{ base: 5, md: 10}}>
           <Text color="teal.300" fontWeight="bold" fontSize={{ base: "lg", md: "3xl" }}>
-            Mude a visão da sua empresa
+            Mais clientes, mais credibilidade, mais resultados.
           </Text>
           <Heading as="h1" fontSize={{ base: "2xl", md: "5xl" }} fontWeight="bold" lineHeight="1.2">
            Torne a sua empresa <Text display="inline" color="teal.300">VISÍVEL</Text>
           </Heading>
           <Text fontSize={{ base: "lg", md: "2xl" }} color="gray.300">
-            Transforme suas ideias em realidade, divulgue sua empresa e deixe a sua marca estampada na internet. Dê uma cara
-            mais profissional para o seu empreendimento. <br /> Entre em contato imediatamente.
+            Transforme suas ideias em realidade, divulgue sua empresa e coloque a sua marca <Text fontWeight="bold" display="inline" color="teal.300">NO MUNDO</Text>. 
+            <br />
+            Seu próximo grande passo começa <Text fontWeight="bold" display="inline" color="teal.300">AQUI</Text>.
+            <br />
+            Entre em contato <Text fontWeight="bold" display="inline" color="teal.300">AGORA</Text>
           </Text>
 
           <Stack direction={{ base: "column", sm: "row" }} gap={6}>
@@ -54,10 +57,9 @@ export default function HeroSection() {
             px={8}
             _hover={{ bg: "green.800" }}
             loading={loading} onClick={() => { setLoading(!loading); handleLoading(!loading)}}
-            asChild
             >
               <a target="_blank" href="https://wa.me/5516996192224?text=Me%20ajuda%20a%20tornar%20minha%20empresa%20vis%C3%ADvel">
-                <Icon>
+                <Icon mr={2}>
                     <FaWhatsapp />
                 </Icon>
                 Impulsionar minha empresa

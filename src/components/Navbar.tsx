@@ -21,7 +21,8 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     px={3}
     py={2}
     rounded="md"
-    _hover={{ textDecoration: "none", bg: "gray.200", color: "black" }}
+    transition="0.3s ease-in-out"
+    _hover={{ textDecoration: "none", bg: "teal.400", color: "black" }}
     href={"#" + children}
   >
     {children}

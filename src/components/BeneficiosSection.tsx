@@ -1,4 +1,6 @@
-import { Box, Heading, Text, Stack, SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading, Text, Stack, SimpleGrid, Button, Icon } from "@chakra-ui/react";
+import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
 const COLORS = ["#38B2AC", "#2C7A7B", "#81E6D9", "#E6FFFA"];
@@ -16,6 +18,17 @@ const barData = [
 ];
 
 export default function BeneficiosSection() {
+  const [loading, setLoading] = useState(false)
+  
+  interface HandleLoading {
+    (status: boolean): void;
+  }
+
+  const handleLoading: HandleLoading = (status) => {
+    setTimeout(() => {
+        setLoading(!status)
+    }, 3000)
+  }
   return (
     <Box py={5} px={{ base: 4, md: 12 }} bg="black" height="100vh">
       <Stack gap={8} mt={24} textAlign="center">
@@ -78,12 +91,29 @@ export default function BeneficiosSection() {
 
       <Stack gap={8} mt={5} textAlign="center">
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
-          Transforme <Text display="inline" color="teal.300">AGORA</Text> o rumo da sua empresa
+          Transforme <Text fontWeight="bold" display="inline" color="teal.300">AGORA</Text> o rumo da sua empresa
         </Heading>
-        <Text fontSize="lg" color="white" maxW="800px" mx="auto">
-          Um site profissional transforma a presença digital da sua empresa, aumentando
-          o alcance, gerando mais clientes e fortalecendo sua marca.
+        <Text>
+          Entre em contato <Text fontWeight="bold" display="inline" color="teal.300">IMEDIATAMENTE</Text> e vamos juntos, tornar a sua empresa visível.
         </Text>
+        <Button
+          colorPalette="green"
+          color="white"
+          width="20%"
+          size="2xl"
+          mx="auto"
+          px={8}
+          variant="outline"
+          _hover={{ bg: "green.700" }}
+          loading={loading} onClick={() => {setLoading(!loading); handleLoading(!loading)}}
+          >
+          <a target="_blank" href="https://wa.me/5516996192224?text=Me%20ajuda%20a%20tornar%20minha%20empresa%20vis%C3%ADvel">
+            <Icon mr={2}>
+              <FaWhatsapp />
+            </Icon>
+            Impulsionar minha empresa
+          </a>
+        </Button>
       </Stack>
     </Box>
   );
