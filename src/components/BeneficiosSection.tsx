@@ -31,7 +31,7 @@ export default function BeneficiosSection() {
   }
   return (
     <Box py={5} px={{ base: 4, md: 12 }} bg="black" height="100vh">
-      <Stack gap={8} mt={24} textAlign="center">
+      <Stack gap={8} textAlign="center">
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
           Benefícios de Ter um Site para Sua Empresa
         </Heading>

@@ -12,7 +12,7 @@ import {
   Icon
 } from "@chakra-ui/react";
 import { PiLightningFill } from "react-icons/pi";
-//import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { IoMdClose, IoMdMenu } from "react-icons/io";
 
 const Links = ["Início", "Serviços", "Sobre", "Contato"];
 
@@ -46,7 +46,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Flex justifyContent="center">
-            <Text fontFamily="sans-serif" fontWeight="bold" fontSize="xl">
+            <Text fontFamily="sans-serif" fontWeight="bold" fontSize="xl" color="white">
                 Impulse
             </Text>
             <Icon color={"teal.400"}>
@@ -70,11 +70,13 @@ export default function Navbar() {
         {/* Botão menu mobile */}
         <IconButton
           size="md"
-          //icon={open ? <CloseIcon /> : <HamburgerIcon />}
           aria-label="Abrir menu"
           display={{ md: "none" }}
           onClick={open ? onClose : onOpen}
-        />
+          transition="1s ease-in-out"
+        >
+          {open ? <IoMdClose /> : <IoMdMenu />}
+        </IconButton>
       </Flex>
 
       {/* Menu mobile */}
@@ -84,9 +86,9 @@ export default function Navbar() {
             {Links.map((link) => (
               <NavLink key={link}>{link}</NavLink>
             ))}
-            <Button colorScheme="teal" size="sm">
+            {/*<Button colorScheme="teal" size="sm">
               Entrar
-            </Button>
+            </Button>*/}
           </Stack>
         </Box>
       ) : null}
