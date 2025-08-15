@@ -22,6 +22,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     py={2}
     rounded="md"
     transition="0.3s ease-in-out"
+    color="white"
     _hover={{ textDecoration: "none", bg: "teal.400", color: "black" }}
     href={"#" + children}
   >
@@ -35,6 +36,7 @@ export default function Navbar() {
   return (
     <Box
       width="100%"
+      color="white"
       bg="black"
       position="sticky"
       top={0}
