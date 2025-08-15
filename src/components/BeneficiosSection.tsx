@@ -93,8 +93,8 @@ export default function BeneficiosSection() {
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
           Transforme <Text fontWeight="bold" display="inline" color="teal.300">AGORA</Text> o rumo da sua empresa
         </Heading>
-        <Text>
-          Entre em contato <Text fontWeight="bold" display="inline" color="teal.300">IMEDIATAMENTE</Text> e vamos juntos, tornar a sua empresa visível.
+        <Text mt={-8}>
+          Entre em contato <Text fontWeight="bold" display="inline" color="teal.300">IMEDIATAMENTE</Text> e vamos juntos, tornar a sua empresa <Text fontWeight="bold" display="inline" color="teal.300">VISÍVEL</Text>.
         </Text>
         <Button
           colorPalette="green"
