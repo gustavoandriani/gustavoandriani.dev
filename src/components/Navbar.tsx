@@ -8,8 +8,10 @@ import {
   useDisclosure,
   Stack,
   Link,
-  Text
+  Text,
+  Icon
 } from "@chakra-ui/react";
+import { PiLightningFill } from "react-icons/pi";
 //import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const Links = ["Início", "Serviços", "Sobre", "Contato"];
@@ -31,25 +33,25 @@ export default function Navbar() {
 
   return (
     <Box
-        width="50vw"
-        bg="linear-gradient(45deg,rgba(27, 195, 207, 0.4) 0%, rgba(34, 188, 240, 0.4) 50%, rgba(22, 94, 145, 0.4) 100%)"
-        backdropFilter="blur(5px)"
-        borderRadius="20px"
-        border="1px solid rgba(255, 255, 255, 0.3)"
-        boxShadow={"0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 0px 0px rgba(255, 255, 255, 0)"}
-        position="fixed"
-        top={5}
-        left="25vw"
-        zIndex={10}
+      width="100%"
+      bg="black"
+      position="sticky"
+      top={0}
+      py={1}
+      px={5}
+      zIndex={10}
     >
-        {/* Logo */}
-        <Flex mt={2} justifyContent="center">
-            <Text fontFamily="monospace" fontWeight="bold" fontSize="xl">
-                Dev GustavoAndriani
-            </Text>
-        </Flex>
-        <Flex mb={2} alignItems="center" justifyContent="space-evenly">
+      <Flex alignItems="center" justifyContent="space-between">
 
+        {/* Logo */}
+        <Flex justifyContent="center">
+            <Text fontFamily="sans-serif" fontWeight="bold" fontSize="xl">
+                Impulse
+            </Text>
+            <Icon color={"teal.400"}>
+              <PiLightningFill />
+            </Icon>
+        </Flex>
         {/* Links desktop */}
         <HStack gap={6} display={{ base: "none", md: "flex" }}>
           {Links.map((link) => (

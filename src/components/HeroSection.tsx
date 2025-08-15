@@ -86,7 +86,7 @@ export default function HeroSection() {
             p="55px"
         >
             <Image 
-                src="../../public/heroimg.png"
+                src="/heroimg.png"
                 ml="75px"
                 transition="0.5s ease-in-out"
                 _hover={{
