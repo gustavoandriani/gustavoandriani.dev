@@ -82,7 +82,7 @@ export default function HeroSection() {
             height="100vh"
             width="100vw"
             bg={{ base:"black", md:"teal.400" }}
-            clipPath="polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
+            clipPath={{ base:"none", md:"polygon(20% 0, 100% 0, 100% 100%, 0% 100%)" }}
             p={{ base: 2, md:"55px" }}
         >
             <Image 
