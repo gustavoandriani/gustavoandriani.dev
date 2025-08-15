@@ -30,7 +30,7 @@ export default function BeneficiosSection() {
     }, 3000)
   }
   return (
-    <Box py={5} px={{ base: 4, md: 12 }} bg="black" height="100vh">
+    <Box py={20} px={{ base: 4, md: 12 }} bg="black" height="100vh">
       <Stack gap={8} textAlign="center">
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
           Benefícios de Ter um Site para Sua Empresa
@@ -89,7 +89,7 @@ export default function BeneficiosSection() {
 
       </SimpleGrid>
 
-      <Stack gap={8} mt={5} textAlign="center">
+      <Stack gap={8} mt={8} textAlign="center">
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
           Transforme <Text fontWeight="bold" display="inline" color="teal.300">AGORA</Text> o rumo da sua empresa
         </Heading>
