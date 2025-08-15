@@ -18,7 +18,7 @@ export default function HeroSection() {
     <Box
       id="#Início"
       width="100%"
-      height="100vh"
+      height={{ base: "fit", md: "100vh" }}
       bg={"black"}
       color="white"
       px={{ base: 10, md: 0}}
@@ -79,14 +79,15 @@ export default function HeroSection() {
         {/* Imagem */}
         <Box
             flex="1"
-            height="100vh"
-            width="100vw"
-            bg="teal.400"
+            width="100dvw"
+            bg="teal.500"
             clipPath={{ base:"none", md:"polygon(20% 0, 100% 0, 100% 100%, 0% 100%)" }}
             p={{ base: 2, md:"55px" }}
+            marginTop={{ base: 5, md: 0 }}
         >
             <Image 
                 src="/heroimg.png"
+                mt={-10}
                 ml={{ base: 0, md:"75px" }}
                 transition="0.5s ease-in-out"
                 _hover={{
