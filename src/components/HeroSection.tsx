@@ -22,7 +22,7 @@ export default function HeroSection() {
       bg={"black"}
       color="white"
       px={{ base: 10, md: 0}}
-      py={{ base: 10, md: 20 }}
+      py={{ base: 5, md: 20 }}
       overflowX="hidden"
     >
       <Flex
@@ -83,11 +83,11 @@ export default function HeroSection() {
             width="100vw"
             bg={{ base:"black", md:"teal.400" }}
             clipPath="polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
-            p="55px"
+            p={{ base: 2, md:"55px" }}
         >
             <Image 
                 src="/heroimg.png"
-                ml="75px"
+                ml={{ base: 0, md:"75px" }}
                 transition="0.5s ease-in-out"
                 _hover={{
                     transform: "scale(1.1)"
