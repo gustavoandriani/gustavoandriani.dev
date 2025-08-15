@@ -4,13 +4,12 @@ import {
   Flex,
   HStack,
   IconButton,
-  Button,
   useDisclosure,
   Stack,
   Link,
   Text,
   Icon
-} from "@chakra-ui/react";
+} from "@chakra-ui/react"; //Adicionar Button novamente depois
 import { PiLightningFill } from "react-icons/pi";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
