@@ -60,7 +60,7 @@ const AvaliacoesSection: React.FC = () => {
     }
   return (
     <Box py={12} px={6} bg="teal.500">
-        <Heading mb={5} textAlign={"center"} as="h2" size={{ base: "xl", md: "3xl" }} color="black">
+        <Heading mb={5} textAlign={"center"} as="h2" size={{ base: "2xl", md: "3xl" }} color="black">
             Por que confiar na <Text display="inline" fontFamily="sans-serif" fontWeight="bold">Impulse</Text><Icon size={"sm"} marginTop={-5} color={"black"}><PiLightningFill /></Icon>?
         </Heading>
 

@@ -70,6 +70,8 @@ export default function Navbar() {
 
         {/* Botão menu mobile */}
         <IconButton
+          color={"white"}
+          bg={"teal.600"}
           size="md"
           aria-label="Abrir menu"
           display={{ md: "none" }}

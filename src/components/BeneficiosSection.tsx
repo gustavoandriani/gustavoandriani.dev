@@ -33,7 +33,7 @@ export default function BeneficiosSection() {
   return (
     <Box pt={10} pb={2} px={{ base: 4, md: 12 }} bg="black" height={{ base:"fit-content", md:"100dvh" }}>
       <Stack gap={8} textAlign="center">
-        <Heading as="h2" size={{ base: "xl", md: "3xl" }} color="white">
+        <Heading as="h2" size={{ base: "2xl", md: "3xl" }} color="white">
           Cresça com a <Text display="inline" fontFamily="sans-serif" fontWeight="bold" color="white">Impulse</Text><Icon size={"sm"} marginTop={-5} color={"teal.400"}><PiLightningFill /></Icon>
         </Heading>
         <Text fontSize="lg" color="white" maxW="800px" mx="auto">
