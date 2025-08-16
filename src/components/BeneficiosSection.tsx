@@ -31,7 +31,7 @@ export default function BeneficiosSection() {
     }, 3000)
   }
   return (
-    <Box pt={10} pb={24} px={{ base: 4, md: 12 }} bg="black" height="100vh">
+    <Box pt={10} pb={24} px={{ base: 4, md: 12 }} bg="black" height={{ base:"245dvh", md:"100dvh" }}>
       <Stack gap={8} textAlign="center">
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
           Cresça com a <Text display="inline" fontFamily="sans-serif" fontWeight="bold" color="white">Impulse</Text><Icon size={"sm"} marginTop={-5} color={"teal.400"}><PiLightningFill /></Icon>
@@ -45,7 +45,7 @@ export default function BeneficiosSection() {
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={10} mt={5}>
         
         {/* Gráfico de Pizza */}
-        <Box p={{ base:0, md:6 }} height="fit" border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
+        <Box p={{ base:0, md:6 }} mb={{ base:8, md:0 }} height="fit" border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
           <Heading as="h3" size="md" mb={4} p={2}>
             Principais Benefícios
           </Heading>
@@ -72,11 +72,11 @@ export default function BeneficiosSection() {
         </Box>
 
         {/* Gráfico de Barras */}
-        <Box p={{ base:0, md:6 }} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
+        <Box p={{ base:0, md:6 }} mb={{ base:8, md:0 }} border="1px solid teal" borderRadius="md" boxShadow="md" transition="0.5s ease-in-out" _hover={{ bg: "teal.800", scale: "1.05" }}>
           <Heading as="h3" size="md" mb={4} p={2}>
             Mudanças Visíveis
           </Heading>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" minHeight={350} maxHeight={500}>
             <BarChart data={barData}>
               <XAxis dataKey="name" />
               <YAxis />
@@ -100,7 +100,7 @@ export default function BeneficiosSection() {
         <Button
           colorPalette="green"
           color="white"
-          width={{ base:"75%", md:"20%"}}
+          width={{ base:"95%", md:"20%"}}
           size="2xl"
           mx="auto"
           mb={10}
