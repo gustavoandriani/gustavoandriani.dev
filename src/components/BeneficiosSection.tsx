@@ -1,6 +1,7 @@
 import { Box, Heading, Text, Stack, SimpleGrid, Button, Icon } from "@chakra-ui/react";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import { PiLightningFill } from "react-icons/pi";
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
 const COLORS = ["#38B2AC", "#2C7A7B", "#81E6D9", "#E6FFFA"];
@@ -33,7 +34,7 @@ export default function BeneficiosSection() {
     <Box pt={10} pb={24} px={{ base: 4, md: 12 }} bg="black" height="100vh">
       <Stack gap={8} textAlign="center">
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
-          Benefícios de Ter um Site para Sua Empresa
+          Cresça com a <Text display="inline" fontFamily="sans-serif" fontWeight="bold" color="white">Impulse</Text><Icon size={"sm"} marginTop={-5} color={"teal.400"}><PiLightningFill /></Icon>
         </Heading>
         <Text fontSize="lg" color="white" maxW="800px" mx="auto">
           Um site profissional transforma a presença digital da sua empresa, aumentando
