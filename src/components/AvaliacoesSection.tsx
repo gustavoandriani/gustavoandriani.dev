@@ -83,7 +83,7 @@ const AvaliacoesSection: React.FC = () => {
                 </Avatar.Root>
 
                 <Box>
-                  <Text fontWeight="bold">{review.name}</Text>
+                  <Text fontWeight="bold" color={"white"}>{review.name}</Text>
                   <Text fontSize="sm" color="gray.500">
                     {review.date}
                   </Text>
@@ -120,7 +120,6 @@ const AvaliacoesSection: React.FC = () => {
             bg={"black"}
             color="white"
             size="2xl"
-            variant={"outline"}
             px={8}
             _hover={{ bg: "gray.800" }}
             loading={loading} onClick={() => { setLoading(!loading); handleLoading(!loading)}}
