@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
           </HStack>
         </Stack>
         <Text fontSize="sm" alignSelf="center" mt={2}>
-          Desenvolvido com ♥ por <Link target='_blank' href="https://github.com/gustavoandriani" color="teal.500" >Gustavo Andriani</Link>
+          Desenvolvido com ♥ por <Link target='_blank' href="https://github.com/gustavoandriani" color="teal.500" >Gustavo Andriani</Link> © {new Date().getFullYear()}
         </Text>
       </Container>
     </Box>
