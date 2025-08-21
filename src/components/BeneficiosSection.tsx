@@ -154,8 +154,8 @@ export default function BeneficiosSection() {
         <Button
           colorScheme="green"
           color="white"
-          width={{ base: "95%", md: "20%" }}
-          size="xl"
+          width={ isLandscape ? "80%" : { base: "95%", md: "20%" }}
+          size="2xl"
           mx="auto"
           mb={10}
           px={8}
@@ -167,8 +167,6 @@ export default function BeneficiosSection() {
           <a
             target="_blank"
             href="https://wa.me/5516996192224?text=Me%20ajuda%20a%20tornar%20minha%20empresa%20vis%C3%ADvel"
-            style={{ display: 'flex', alignItems: 'center', width: '100%', color: 'inherit', textDecoration: 'none' }}
-            rel="noopener noreferrer"
           >
             <Icon as={FaWhatsapp} mr={2} />
             Impulsionar minha empresa
