@@ -154,7 +154,7 @@ export default function BeneficiosSection() {
         <Button
           colorScheme="green"
           color="white"
-          width={ isLandscape ? "80%" : { base: "95%", md: "20%" }}
+          width={ isLandscape ? "100%" : { base: "95%", md: "20%" }}
           size="2xl"
           mx="auto"
           mb={10}
