@@ -33,6 +33,7 @@ const Footer: React.FC = () => {
           <HStack gap={4}>
             <Link href="https://github.com/gustavoandriani">
                 <IconButton
+                color={"white"}
                 aria-label="GitHub"
                 variant="ghost"
                 size="lg"
