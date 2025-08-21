@@ -9,7 +9,7 @@ import {
   HStack,
   Icon,
 } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { PiLightningFill } from 'react-icons/pi';
 
 const Footer: React.FC = () => {
