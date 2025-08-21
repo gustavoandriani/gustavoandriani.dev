@@ -79,7 +79,7 @@ export default function BeneficiosSection() {
           _hover={{ bg: "teal.800", transform: "scale(1.03)" }}
           minH={pieHeight + 70}
         >
-          <Heading as="h3" size="md" mb={4} p={2}>
+          <Heading as="h3" size="md" mb={4} p={2} color="white">
             Principais Benefícios
           </Heading>
           <ResponsiveContainer width="100%" height={pieHeight}>
@@ -116,7 +116,7 @@ export default function BeneficiosSection() {
           _hover={{ bg: "teal.800", transform: "scale(1.03)" }}
           minH={barHeight + 70}
         >
-          <Heading as="h3" size="md" mb={4} p={2}>
+          <Heading as="h3" size="md" mb={4} p={2} color="white">
             Mudanças Visíveis
           </Heading>
           <ResponsiveContainer width="100%" height={barHeight}>
@@ -132,7 +132,7 @@ export default function BeneficiosSection() {
         </Box>
       </SimpleGrid>
 
-      <Stack gap={8} mt={8} textAlign="center">
+      <Stack gap={8} mt={8} textAlign="center" color={"white"}>
         <Heading as="h2" size={{ base: "lg", md: "3xl" }} color="white">
           Transforme{" "}
           <Text fontWeight="bold" display="inline" color="teal.300">
@@ -155,7 +155,7 @@ export default function BeneficiosSection() {
           colorScheme="green"
           color="white"
           width={{ base: "95%", md: "20%" }}
-          size="lg"
+          size="xl"
           mx="auto"
           mb={10}
           px={8}
